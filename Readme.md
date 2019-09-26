@@ -1,7 +1,7 @@
 Database and collection creation details is covered in "DB setup" file.
 The app.js file handles 2 API calls
 1. API 1: /api/first
-    takes in the type of location alone with the date and returns a list of locations matching the same.
+    takes in the type of location along with the date and returns a list of locations matching the same.
 2. API 2: /api/second
     takes in longitude, latitude and type of location and returns a lsit of locations of the same time in 10 km radius.
     
