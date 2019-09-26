@@ -1,3 +1,11 @@
+Asssignment summary:
+
+| Assignment API        | Done          |
+| -------------         |:-------------:|
+| System Health         | No            |
+| Location              | Yes           |
+| Map                   | Partial       |
+
 Database and collection creation details is covered in "DB setup" file.
 The app.js file handles 2 API calls
 1. API 1: /api/first
