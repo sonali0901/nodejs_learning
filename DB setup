@@ -1,0 +1,48 @@
+Db: locationapi
+use locationapi
+db.createCollection("dbLocations");
+
+Location: { 
+coordinates: [], 
+type: Type A or Type B, 
+createdAt: Date, 
+} 
+log: 0 to 180
+lat: 0 to 90
+
+db.dbLocations.insert([
+{ coordinates: [23, 40], type: 'A', createdAt: new Date(2019,09,20) },
+{ coordinates: [21, 40], type: 'A', createdAt: new Date(2019,09,20) },
+{ coordinates: [24, 40], type: 'A', createdAt: new Date(2019,08,20) },
+{ coordinates: [23, 45], type: 'A', createdAt: new Date(2019,08,24) },
+{ coordinates: [23, 44], type: 'A', createdAt: new Date(2019,08,26) },
+{ coordinates: [23, 42], type: 'A', createdAt: new Date(2019,07,28) },
+{ coordinates: [27, 40], type: 'B', createdAt: new Date(2019,07,05) },
+{ coordinates: [37, 50], type: 'B', createdAt: new Date(2019,07,20) },
+{ coordinates: [73, 60], type: 'B', createdAt: new Date(2019,06,20) },
+{ coordinates: [100, 40], type: 'B', createdAt: new Date(2019,06,20) },
+{ coordinates: [29, 40], type: 'B', createdAt: new Date(2019,06,09) },
+{ coordinates: [23, 40], type: 'B', createdAt: new Date(2019,05,01) },
+{ coordinates: [22.1, 40.9], type: 'A', createdAt: new Date(2019,05,12) },
+{ coordinates: [23.5, 40.5], type: 'A', createdAt: new Date(2019,04,23) },
+{ coordinates: [80, 90], type: 'A', createdAt: new Date(2019,04,22) }
+]);
+
+db.dbLocations.find();
+
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65ef1"), "coordinates" : [ 23, 40 ], "type" : "A", "createdAt" : ISODate("2019-10-19T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65ef2"), "coordinates" : [ 21, 40 ], "type" : "A", "createdAt" : ISODate("2019-10-19T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65ef3"), "coordinates" : [ 24, 40 ], "type" : "A", "createdAt" : ISODate("2019-09-19T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65ef4"), "coordinates" : [ 23, 45 ], "type" : "A", "createdAt" : ISODate("2019-09-23T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65ef5"), "coordinates" : [ 23, 44 ], "type" : "A", "createdAt" : ISODate("2019-09-25T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65ef6"), "coordinates" : [ 23, 42 ], "type" : "A", "createdAt" : ISODate("2019-08-27T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65ef7"), "coordinates" : [ 27, 40 ], "type" : "B", "createdAt" : ISODate("2019-08-04T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65ef8"), "coordinates" : [ 37, 50 ], "type" : "B", "createdAt" : ISODate("2019-08-19T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65ef9"), "coordinates" : [ 73, 60 ], "type" : "B", "createdAt" : ISODate("2019-07-19T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65efa"), "coordinates" : [ 100, 40 ], "type" : "B", "createdAt" : ISODate("2019-07-19T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65efb"), "coordinates" : [ 29, 40 ], "type" : "B", "createdAt" : ISODate("2019-07-08T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65efc"), "coordinates" : [ 23, 40 ], "type" : "B", "createdAt" : ISODate("2019-05-31T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65efd"), "coordinates" : [ 22.1, 40.9 ], "type" : "A", "createdAt" : ISODate("2019-06-11T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65efe"), "coordinates" : [ 23.5, 40.5 ], "type" : "A", "createdAt" : ISODate("2019-05-22T18:30:00Z") }
+{ "_id" : ObjectId("5d8ac954bd2a41ed72e65eff"), "coordinates" : [ 80, 90 ], "type" : "A", "createdAt" : ISODate("2019-05-21T18:30:00Z") }
+
